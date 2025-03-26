@@ -123,8 +123,8 @@ private:
 	bool rotateX = false, rotateY = false, rotateZ = false;
 	float rotateSpeed = 1.0f;
 	bool resetCube = false;
-	DirectX::XMFLOAT4 lightPosition = {2.0f, 2.0f, -2.0f, 0.0f};
-	float nearPlane = 1.0f, farPlane = 7.5f;
+	DirectX::XMFLOAT4 lightPosition = {2.0f, 4.0f, -2.0f, 0.0f};
+	float nearPlane = 1.0f, farPlane = 8.0f;
 	
 	// Misc Draw Data
 	D3D12_VIEWPORT viewport;

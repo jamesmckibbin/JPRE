@@ -24,9 +24,15 @@ cbuffer ConstantBuffer : register(b0)
 
 float ShadowCalculation(float4 lightSpacePos, float bias)
 {
-    float shadowMapDepth = t2.Sample(s1, lightSpacePos.xy).r;
-    float worldDepth = lightSpacePos.z;
-    float shadow = worldDepth + bias < shadowMapDepth ? 1.0f : 0.0f;
+    float3 projCoords = lightSpacePos.xyz / lightSpacePos.w;
+    projCoords = 0.5f + mul(0.5f, projCoords);
+    float shadowMapDepth = t2.Sample(s1, projCoords.xy).r;
+    float worldDepth = projCoords.z;
+    float shadow = worldDepth - bias > shadowMapDepth ? 1.0f : 0.0f;
+    if (projCoords.z > 1.0f)
+    {
+        shadow = 0.0f;
+    }
     return shadow;
 }
 
@@ -43,8 +49,8 @@ float4 main(PS_INPUT input) : SV_TARGET
     float bias = max(mul(0.05, (1.0 - dot(normal, lDir.xyz))), 0.005);
     float shadow = ShadowCalculation(input.fragPosLightSpace, bias);
     
-    float3 lightColor = mul(saturate(mul(dsa.x, diffuseFactor) + mul(dsa.y, specularFactor)), _LightColor);
-    lightColor += mul(_AmbientColor + (1.0f - shadow), dsa.z);
+    float3 lightColor = mul(_LightColor, mul(dsa.x, diffuseFactor) + mul(dsa.y, specularFactor));
+    lightColor += mul(max(_AmbientColor - shadow, 0.0f), dsa.z);
     float3 objectColor = t1.Sample(s1, input.texCoord).rgb;
     float3 passColor = saturate(objectColor * lightColor);
     

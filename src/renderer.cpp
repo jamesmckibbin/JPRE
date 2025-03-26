@@ -469,18 +469,16 @@ void Renderer::Update(float dt)
 	XMStoreFloat3(&cbPerObject.dsaMod, XMLoadFloat3(&dsaModifiers));
 	XMStoreInt(&cbPerObject.ppOption, XMLoadInt(&ppOption));
 
-	DirectX::XMMATRIX lightView = DirectX::XMMatrixLookAtLH(XMLoadFloat4(&lightPosition), XMLoadFloat4(&cameraTarget), XMLoadFloat4(&cameraUp));
-	DirectX::XMMATRIX lightProj = DirectX::XMMatrixOrthographicLH(20, 20, nearPlane, farPlane);
+	DirectX::XMMATRIX lightView = DirectX::XMMatrixLookAtLH(XMLoadFloat4(&lightPosition), XMLoadFloat4(&cameraTarget), {0, 1, 0});
+	DirectX::XMMATRIX lightProj = DirectX::XMMatrixOrthographicLH(10, 10, nearPlane, farPlane);
 	DirectX::XMMATRIX lightMat = XMMatrixMultiply(lightView, lightProj);
 	XMStoreFloat4x4(&cbPerObject.lMat, XMMatrixTranspose(lightMat));
 	XMStoreFloat4(&cbPerObject.lDir, XMLoadFloat4(&lightPosition));
 
-	// copy our ConstantBuffer instance to the mapped constant buffer resource
 	memcpy(cbvGPUAddress[assets->GetFrameIndex()], &cbPerObject, sizeof(cbPerObject));
 
 	translationMat = DirectX::XMMatrixTranslationFromVector(XMLoadFloat4(&planePosition));
-	worldMat = translationMat;
-	XMStoreFloat4x4(&planeWorldMat, worldMat);
+	XMStoreFloat4x4(&planeWorldMat, translationMat);
 
 	wMat = XMLoadFloat4x4(&planeWorldMat);
 	XMStoreFloat4x4(&cbPerObject.wMat, XMMatrixTranspose(wMat));

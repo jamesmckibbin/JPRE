@@ -11,7 +11,7 @@ BuildDirectory: C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/buil
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: JamesLaptop
+Site: JamesPC
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Win32-ninja
@@ -63,8 +63,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe
-CompilerVersion: 19.41.34120.0
+Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe
+CompilerVersion: 19.38.33145.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -94,6 +94,9 @@ TimeOut: 1500
 # During parallel testing CTest will not start a new test if doing
 # so would cause the system load to exceed this value.
 TestLoad: 
+
+TLSVerify: 
+TLSVersion: 
 
 UseLaunchers: 
 CurlOptions: 
