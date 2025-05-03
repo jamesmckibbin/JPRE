@@ -174,7 +174,7 @@
 					"fragment" : "/external:W4"
 				},
 				{
-					"fragment" : "/YcC:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/build/x64-Debug/libs/DirectXTK/CMakeFiles/DirectXTK12.dir/cmake_pch.hxx /FpC:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/build/x64-Debug/libs/DirectXTK/CMakeFiles/DirectXTK12.dir/./cmake_pch.cxx.pch /FIC:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/build/x64-Debug/libs/DirectXTK/CMakeFiles/DirectXTK12.dir/cmake_pch.hxx"
+					"fragment" : "/YcC:/Dev/Repositories/JPRE/out/build/x64-Debug/libs/DirectXTK/CMakeFiles/DirectXTK12.dir/cmake_pch.hxx /FpC:/Dev/Repositories/JPRE/out/build/x64-Debug/libs/DirectXTK/CMakeFiles/DirectXTK12.dir/./cmake_pch.cxx.pch /FIC:/Dev/Repositories/JPRE/out/build/x64-Debug/libs/DirectXTK/CMakeFiles/DirectXTK12.dir/cmake_pch.hxx"
 				}
 			],
 			"defines" : 
@@ -196,19 +196,19 @@
 			[
 				{
 					"backtrace" : 7,
-					"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/build/x64-Debug/libs/DirectXTK/Shaders/Compiled"
+					"path" : "C:/Dev/Repositories/JPRE/out/build/x64-Debug/libs/DirectXTK/Shaders/Compiled"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/DirectXTK/Src"
+					"path" : "C:/Dev/Repositories/JPRE/libs/DirectXTK/Src"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/DirectXTK/Inc"
+					"path" : "C:/Dev/Repositories/JPRE/libs/DirectXTK/Inc"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/DirectXTK/Audio"
+					"path" : "C:/Dev/Repositories/JPRE/libs/DirectXTK/Audio"
 				}
 			],
 			"language" : "CXX",
@@ -224,7 +224,7 @@
 			[
 				{
 					"backtrace" : 10,
-					"header" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/DirectXTK/Src/pch.h"
+					"header" : "C:/Dev/Repositories/JPRE/libs/DirectXTK/Src/pch.h"
 				}
 			],
 			"sourceIndexes" : 
@@ -299,7 +299,7 @@
 					"fragment" : "/external:W4"
 				},
 				{
-					"fragment" : "/YuC:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/build/x64-Debug/libs/DirectXTK/CMakeFiles/DirectXTK12.dir/cmake_pch.hxx /FpC:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/build/x64-Debug/libs/DirectXTK/CMakeFiles/DirectXTK12.dir/./cmake_pch.cxx.pch /FIC:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/build/x64-Debug/libs/DirectXTK/CMakeFiles/DirectXTK12.dir/cmake_pch.hxx"
+					"fragment" : "/YuC:/Dev/Repositories/JPRE/out/build/x64-Debug/libs/DirectXTK/CMakeFiles/DirectXTK12.dir/cmake_pch.hxx /FpC:/Dev/Repositories/JPRE/out/build/x64-Debug/libs/DirectXTK/CMakeFiles/DirectXTK12.dir/./cmake_pch.cxx.pch /FIC:/Dev/Repositories/JPRE/out/build/x64-Debug/libs/DirectXTK/CMakeFiles/DirectXTK12.dir/cmake_pch.hxx"
 				}
 			],
 			"defines" : 
@@ -321,19 +321,19 @@
 			[
 				{
 					"backtrace" : 7,
-					"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/build/x64-Debug/libs/DirectXTK/Shaders/Compiled"
+					"path" : "C:/Dev/Repositories/JPRE/out/build/x64-Debug/libs/DirectXTK/Shaders/Compiled"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/DirectXTK/Src"
+					"path" : "C:/Dev/Repositories/JPRE/libs/DirectXTK/Src"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/DirectXTK/Inc"
+					"path" : "C:/Dev/Repositories/JPRE/libs/DirectXTK/Inc"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/DirectXTK/Audio"
+					"path" : "C:/Dev/Repositories/JPRE/libs/DirectXTK/Audio"
 				}
 			],
 			"language" : "CXX",
@@ -349,7 +349,7 @@
 			[
 				{
 					"backtrace" : 10,
-					"header" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/DirectXTK/Src/pch.h"
+					"header" : "C:/Dev/Repositories/JPRE/libs/DirectXTK/Src/pch.h"
 				}
 			],
 			"sourceIndexes" : 
@@ -419,7 +419,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/install/x64-debug"
+			"path" : "C:/Dev/Repositories/JPRE/out/install/x64-debug"
 		}
 	},
 	"name" : "DirectXTK12",

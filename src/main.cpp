@@ -2,20 +2,20 @@
 
 int main(int argc, char* args[]) {
 	
-	Application* mainApp = new Application();
+	App* main_app = new App();
 
-    mainApp->Create();
+	main_app->Create();
 
-	while (mainApp->IsRunning()) 
+	while (running)
 	{
-		mainApp->Update();
-		mainApp->Draw();
+		main_app->Update();
+		main_app->Draw();
 	}
 
-	mainApp->Destroy();
+	main_app->Destroy();
 
-	delete mainApp;
-	mainApp = nullptr;
+	delete main_app;
+	main_app = nullptr;
 
 	return 0;
 }

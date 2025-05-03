@@ -8,6 +8,7 @@ https://github.com/galek/SDL-Directx12
 
 #include "gconst.h"
 #include "renderassets.h"
+#include "renderpipeline.h"
 #include "texturemanager.h"
 #include "resourcemanager.h"
 #include "shader.h"
@@ -132,4 +133,6 @@ private:
 	D3D12_VIEWPORT smViewport;
 	D3D12_RECT smScissorRect;
 
+	// REORGANIZATION HERE
+	std::vector<RenderPipeline*> pipelines;
 };

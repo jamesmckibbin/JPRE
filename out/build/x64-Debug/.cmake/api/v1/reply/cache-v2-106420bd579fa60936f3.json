@@ -147,7 +147,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/build/x64-Debug"
+			"value" : "c:/Dev/Repositories/JPRE/out/build/x64-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -579,7 +579,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/build/x64-Debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Dev/Repositories/JPRE/out/build/x64-Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -639,7 +639,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM"
+			"value" : "C:/Dev/Repositories/JPRE"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -843,7 +843,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/install/x64-debug"
+			"value" : "C:/Dev/Repositories/JPRE/out/install/x64-debug"
 		},
 		{
 			"name" : "CMAKE_INSTALL_RUNSTATEDIR",
@@ -1091,7 +1091,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "DirectXPurgatory"
+			"value" : "Jam-Packed Rendering Engine"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1607,7 +1607,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/build/x64-Debug"
+			"value" : "C:/Dev/Repositories/JPRE/out/build/x64-Debug"
 		},
 		{
 			"name" : "DirectXPurgatory_IS_TOP_LEVEL",
@@ -1631,7 +1631,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM"
+			"value" : "C:/Dev/Repositories/JPRE"
 		},
 		{
 			"name" : "DirectXTK12_BINARY_DIR",
@@ -1643,7 +1643,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/build/x64-Debug/libs/DirectXTK"
+			"value" : "C:/Dev/Repositories/JPRE/out/build/x64-Debug/libs/DirectXTK"
 		},
 		{
 			"name" : "DirectXTK12_IS_TOP_LEVEL",
@@ -1667,7 +1667,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/DirectXTK"
+			"value" : "C:/Dev/Repositories/JPRE/libs/DirectXTK"
 		},
 		{
 			"name" : "ENABLE_CODE_ANALYSIS",
@@ -1704,6 +1704,42 @@
 			],
 			"type" : "BOOL",
 			"value" : "OFF"
+		},
+		{
+			"name" : "Jam-Packed Rendering Engine_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Dev/Repositories/JPRE/out/build/x64-Debug"
+		},
+		{
+			"name" : "Jam-Packed Rendering Engine_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Jam-Packed Rendering Engine_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Dev/Repositories/JPRE"
 		},
 		{
 			"name" : "MAKECOMMAND",
@@ -1803,7 +1839,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/install/x64-debug"
+			"value" : "C:/Dev/Repositories/JPRE/out/install/x64-debug"
 		},
 		{
 			"name" : "directx-headers_DIR",

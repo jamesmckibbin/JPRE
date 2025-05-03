@@ -123,7 +123,7 @@
 						2,
 						3
 					],
-					"name" : "DirectXPurgatory",
+					"name" : "Jam-Packed Rendering Engine",
 					"targetIndexes" : 
 					[
 						29
@@ -238,7 +238,7 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "DirectXTK12::@ee53c7a2ebc0c1508d58",
-					"jsonFile" : "target-DirectXTK12-Debug-18edb4a855704de67a99.json",
+					"jsonFile" : "target-DirectXTK12-Debug-c14fb5ca0254b9b29452.json",
 					"name" : "DirectXTK12",
 					"projectIndex" : 1
 				},
@@ -377,9 +377,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "app::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-app-Debug-cb26a72035c5f91d01c7.json",
-					"name" : "app",
+					"id" : "jpre::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jpre-Debug-b5697981bc4d7f64495e.json",
+					"name" : "jpre",
 					"projectIndex" : 0
 				}
 			]
@@ -388,8 +388,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/out/build/x64-Debug",
-		"source" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM"
+		"build" : "C:/Dev/Repositories/JPRE/out/build/x64-Debug",
+		"source" : "C:/Dev/Repositories/JPRE"
 	},
 	"version" : 
 	{

@@ -1,36 +1,35 @@
 #pragma once
 
-#include "renderer.h"
+#include "rendermanager.h"
 #include "timer.h"
 
 static bool running = true;
 
-enum SCREEN_STATE {
-	SS_NONE = -1,
-	SS_WINDOWED = 0,
-	SS_FULLSCREEN = 1
+enum ScreenState {
+	WINDOWED = 0,
+	BORDERLESS_WINDOWED = 1,
+	FULLSCREEN = 2,
 };
 
-class Application {
+class App {
 public:
 	void Create();
 	void Destroy();
 	void Update();
 	void Draw();
 
-	HWND GetWindow();
-	bool IsRunning();
-	SCREEN_STATE GetScreenState();
+	HWND* GetWindow();
+	ScreenState GetScreenState();
 	float GetWindowWidth();
 	float GetWindowHeight();
 
 	void StopRunning();
 
 private:
-	HWND hWnd;
+	HWND window;
 	float currentWindowWidth = DEFAULT_WINDOW_WIDTH;
 	float currentWindowHeight = DEFAULT_WINDOW_HEIGHT;
-	SCREEN_STATE screenState = SS_WINDOWED;
+	ScreenState screenState = ScreenState::WINDOWED;
 
 	Renderer* renderer;
 	Timer timer;

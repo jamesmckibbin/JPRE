@@ -1,11 +1,11 @@
 #include "app.h"
 
-void Application::Create()
+void App::Create()
 {
 	// Create a window using SDL
-	SDL_Window* window = SDL_CreateWindow(
-		"DirectX 12 Purgatory", DEFAULT_WINDOW_WIDTH, DEFAULT_WINDOW_HEIGHT, 0);
-	hWnd = GetActiveWindow();
+	SDL_Window* sdlWnd = SDL_CreateWindow(
+		"JPRE", DEFAULT_WINDOW_WIDTH, DEFAULT_WINDOW_HEIGHT, 0);
+	window = GetActiveWindow();
 
 	// Initialize ImGui
 	IMGUI_CHECKVERSION();
@@ -14,12 +14,12 @@ void Application::Create()
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
 	ImGui::StyleColorsDark();
-	ImGui_ImplSDL3_InitForD3D(window);
+	ImGui_ImplSDL3_InitForD3D(sdlWnd);
 
 	// Initialize Renderer & ImGui for DirectX
 	renderer = new Renderer();
 	if (!renderer->Init(
-		hWnd,
+		window,
 		screenState,
 		currentWindowWidth,
 		currentWindowHeight))
@@ -30,7 +30,7 @@ void Application::Create()
 	}
 }
 
-void Application::Destroy()
+void App::Destroy()
 {
 	renderer->WaitForPreviousFrame();
 	renderer->CloseFenceEventHandle();
@@ -43,7 +43,7 @@ void Application::Destroy()
 	renderer = nullptr;
 }
 
-void Application::Update()
+void App::Update()
 {
 	SDL_Event windowEvent;
 	if (SDL_PollEvent(&windowEvent))
@@ -60,19 +60,17 @@ void Application::Update()
 	renderer->Update(dt);
 }
 
-void Application::Draw()
+void App::Draw()
 {
 	renderer->Render();
 }
 
-HWND Application::GetWindow() { return hWnd; }
+HWND* App::GetWindow() { return &window; }
 
-bool Application::IsRunning() { return running; }
+ScreenState App::GetScreenState() { return screenState; }
 
-SCREEN_STATE Application::GetScreenState() { return screenState; }
+float App::GetWindowWidth() { return currentWindowWidth; }
 
-float Application::GetWindowWidth() { return currentWindowWidth; }
+float App::GetWindowHeight() { return currentWindowHeight; }
 
-float Application::GetWindowHeight() { return currentWindowHeight; }
-
-void Application::StopRunning() { running = false; }
+void App::StopRunning() { running = false; }

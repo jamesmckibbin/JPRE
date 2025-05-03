@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "app.exe"
+			"path" : "jpre.exe"
 		},
 		{
-			"path" : "app.pdb"
+			"path" : "jpre.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -120,23 +120,23 @@
 			[
 				{
 					"backtrace" : 9,
-					"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/SDL3/include"
+					"path" : "C:/Dev/Repositories/JPRE/libs/SDL3/include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/DirectX12/include/directx"
+					"path" : "C:/Dev/Repositories/JPRE/libs/DirectX12/include/directx"
 				},
 				{
 					"backtrace" : 11,
-					"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/DirectX12/include/dxguid"
+					"path" : "C:/Dev/Repositories/JPRE/libs/DirectX12/include/dxguid"
 				},
 				{
 					"backtrace" : 12,
-					"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/DirectXTK/Inc"
+					"path" : "C:/Dev/Repositories/JPRE/libs/DirectXTK/Inc"
 				},
 				{
 					"backtrace" : 13,
-					"path" : "C:/Dev/Repositories/GPR-300-01-Intermediate-Graphics-JM/libs/imgui"
+					"path" : "C:/Dev/Repositories/JPRE/libs/imgui"
 				}
 			],
 			"language" : "CXX",
@@ -158,7 +158,9 @@
 				13,
 				14,
 				15,
-				16
+				16,
+				17,
+				18
 			]
 		}
 	],
@@ -169,7 +171,7 @@
 			"id" : "DirectXTK12::@ee53c7a2ebc0c1508d58"
 		}
 	],
-	"id" : "app::@6890427a1f51a3e7e1df",
+	"id" : "jpre::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -184,7 +186,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-LIBPATH:C:\\Dev\\Repositories\\GPR-300-01-Intermediate-Graphics-JM\\libs\\SDL3",
+				"fragment" : "-LIBPATH:C:\\Dev\\Repositories\\JPRE\\libs\\SDL3",
 				"role" : "libraryPath"
 			},
 			{
@@ -224,8 +226,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "app",
-	"nameOnDisk" : "app.exe",
+	"name" : "jpre",
+	"nameOnDisk" : "jpre.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -253,7 +255,9 @@
 				13,
 				14,
 				15,
-				16
+				16,
+				17,
+				18
 			]
 		}
 	],
@@ -274,6 +278,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "src/model.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "src/pipelinestateobject.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -286,7 +296,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/renderer.cpp",
+			"path" : "src/rendermanager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/renderpipeline.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
